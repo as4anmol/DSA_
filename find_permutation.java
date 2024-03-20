@@ -1,8 +1,6 @@
 //(Q) Find permutation.. find & print all permutation of a givrn string "abc".
 
 public class find_permutation {
-    //(Q) Find permutation.. find & print all permutation of a givrn string "abc".
-
 public static void findPermutation(String str, String ans) {
     //base case
     if(str.length()==0){
