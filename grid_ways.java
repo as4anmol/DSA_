@@ -1,10 +1,12 @@
+//find number of ways to reach from (0,0) to (n-1,m-1) in n*m grid..(allowed moves ---> right or down)
+
 public class grid_ways {
     public static int gridWays( int i,int j,int n,int m) {
         //base case
-        if(i==n-1 && j==m-1){
+        if(i==n-1 && j==m-1){ //condition for last cell
             return 1;
         }
-        else if(i==n || j==m){
+        else if(i==n || j==m){ // boundary crossing condition
             return 0;
         }
         int w1 =gridWays(i+1, j, n, m);
